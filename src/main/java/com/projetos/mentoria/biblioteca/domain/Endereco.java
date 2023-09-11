@@ -21,9 +21,11 @@ import javax.persistence.*;
 public class Endereco {
 
     @Id
-    @Column(name = "cep", nullable = false)
-    private String cep;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_endereco", nullable = false)
+    private Integer idEnderecoCliente;
 
+    private String cep;
     private String logradouro;
     private String complemento;
     private String bairro;

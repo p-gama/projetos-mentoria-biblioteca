@@ -1,7 +1,7 @@
 package com.projetos.mentoria.biblioteca.controller;
 
-import com.projetos.mentoria.biblioteca.controller.dto.ClienteDTO;
-import com.projetos.mentoria.biblioteca.domain.Cliente;
+import com.projetos.mentoria.biblioteca.controller.dto.pessoa.ClienteDTO;
+import com.projetos.mentoria.biblioteca.domain.pessoa.Cliente;
 import com.projetos.mentoria.biblioteca.mapper.ClienteMapper;
 import com.projetos.mentoria.biblioteca.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;

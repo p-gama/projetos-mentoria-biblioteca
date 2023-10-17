@@ -1,7 +1,7 @@
 package com.projetos.mentoria.biblioteca.service;
 
-import com.projetos.mentoria.biblioteca.domain.Cliente;
-import com.projetos.mentoria.biblioteca.domain.Endereco;
+import com.projetos.mentoria.biblioteca.domain.pessoa.Cliente;
+import com.projetos.mentoria.biblioteca.domain.pessoa.Endereco;
 
 import com.projetos.mentoria.biblioteca.infra.ClienteRepository;
 
@@ -23,7 +23,6 @@ public class ClienteService {
     private CepService cepService;
 
     public Cliente salvarClienteComEndereco(Cliente cliente) {
-        // Certifique-se de que os endereços do cliente estejam associados ao cliente
         for (Endereco endereco : cliente.getEnderecos()) {
             endereco.setCliente(cliente);
 

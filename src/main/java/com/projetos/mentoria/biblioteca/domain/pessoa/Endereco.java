@@ -1,7 +1,9 @@
-package com.projetos.mentoria.biblioteca.domain;
+package com.projetos.mentoria.biblioteca.domain.pessoa;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,6 +18,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @JsonIgnoreProperties
+@JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
+
 
 @Table(name = "tb_endereco")
 public class Endereco {

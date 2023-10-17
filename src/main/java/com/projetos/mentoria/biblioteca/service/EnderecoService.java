@@ -1,6 +1,6 @@
 package com.projetos.mentoria.biblioteca.service;
 
-import com.projetos.mentoria.biblioteca.domain.Endereco;
+import com.projetos.mentoria.biblioteca.domain.pessoa.Endereco;
 import com.projetos.mentoria.biblioteca.exception.NaoEncontradoException;
 import com.projetos.mentoria.biblioteca.infra.EnderecoRepository;
 import com.projetos.mentoria.biblioteca.infra.external.CepService;

@@ -1,6 +1,6 @@
 package com.projetos.mentoria.biblioteca.infra.external;
 
-import com.projetos.mentoria.biblioteca.domain.Endereco;
+import com.projetos.mentoria.biblioteca.domain.pessoa.Endereco;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

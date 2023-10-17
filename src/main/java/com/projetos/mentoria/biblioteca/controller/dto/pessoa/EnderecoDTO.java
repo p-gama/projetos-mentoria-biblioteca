@@ -1,4 +1,4 @@
-package com.projetos.mentoria.biblioteca.controller.dto;
+package com.projetos.mentoria.biblioteca.controller.dto.pessoa;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;

@@ -28,4 +28,16 @@ public class ListaLivrosService {
         return listaLivrosRepository.findByClienteId(clienteId);
     }
 
+    public ListaLivros buscarListaPorId(Long listaId) {
+        return listaLivrosRepository.findById(listaId).orElse(null);  //INCLUIR EXCEPTION
+    }
+
+    public ListaLivros atualizarLista(ListaLivros lista) {
+        return listaLivrosRepository.save(lista);
+    }
+
+    public ListaLivros salvarLista(ListaLivros lista) {
+        return listaLivrosRepository.save(lista);
+    }
+
 }

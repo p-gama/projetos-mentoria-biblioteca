@@ -9,7 +9,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -25,5 +24,5 @@ public class ListaLivrosDTO {
 
     private String nomeLista;
 
-    private List<BookItem> livrosdaLista =  new ArrayList<>();
+    private List<BookItem> items;
 }
